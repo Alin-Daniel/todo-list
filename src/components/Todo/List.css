@@ -1,0 +1,22 @@
+
+.List { 
+    border: 1px solid #40DF9A
+    ;
+    /* border: 1px solid #ccc; */
+}
+
+.List label {
+    display: inline-block;
+    margin-left: 10px;
+    width: 85%;
+    word-break: break-all;
+}
+
+.List input{
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   margin: 0; 
+   z-index: 30;
+   text-align: left;
+} 

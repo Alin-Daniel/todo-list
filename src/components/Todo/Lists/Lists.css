@@ -1,0 +1,33 @@
+.Lists {
+    position: relative;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.Button {
+  margin: 5px;
+}
+
+.ListsLine {
+    text-decoration: line-through;
+}
+
+/* @media (min-width: 500px) and (min-height: 400px) {
+    .Lists {
+        width: 350px;
+    }
+}
+
+@media (min-width: 500px) and (min-height:401px) {
+    .Lists {
+        width: 450px;
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+    .Lists {
+        width: 700px;
+    }
+} */

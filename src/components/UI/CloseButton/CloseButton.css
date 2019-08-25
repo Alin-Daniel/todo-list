@@ -1,0 +1,42 @@
+  .Close {
+    position: absolute;
+    top:45%;
+    right: 20px;
+    margin: auto;
+    width: 20px;
+    height: 5px;
+    cursor: pointer;
+  }
+  
+  .inner {
+    width: inherit;
+    text-align: center;
+  }
+  
+  .inner:before, .inner:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: inherit;
+    background: #D4005C;
+    /* background: #FFC107; */
+    left: 0;
+    transition: all .3s ease-in;
+  }
+  
+  .inner:before {
+    top: 50%; 
+    transform: rotate(45deg);  
+  }
+  
+  .inner:after {  
+    bottom: 50%;
+    transform: rotate(-45deg);  
+  }
+  
+  
+
+ 
+  
+  
+  
