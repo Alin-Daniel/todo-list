@@ -1,5 +1,6 @@
 import * as actionTypes from "./actionTypes";
 import axios from "axios";
+import config from "../../../config";
 
 export const authStart = () => {
   return {
@@ -49,10 +50,10 @@ export const auth = (email, password, isSignUp) => {
     };
 
     let url =
-      "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyBCZT0WONJNZMYZT2rkH3NUic9jw5_aENs";
+      "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=" + config.key;
     if (!isSignUp) {
       url =
-        "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyBCZT0WONJNZMYZT2rkH3NUic9jw5_aENs";
+        "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=" + config.key;
     }
 
     axios
