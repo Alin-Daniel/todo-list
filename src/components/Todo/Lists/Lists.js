@@ -1,10 +1,10 @@
 import React from "react";
 
-import classes from "./Lists.css";
 import CloseButton from "../../UI/CloseButton/CloseButton";
 import List from "../List";
 import Aux from "../../../hoc/Auxiliary/Auxiliary";
 import Button from "../../UI/Button/Button";
+import classes from "./Lists.css";
 
 const lists = props => {   
 

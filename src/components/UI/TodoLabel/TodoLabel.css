@@ -1,0 +1,33 @@
+.TodoLabel {
+    padding: 10px;
+    background-color: #65dca7;
+    border-radius: 10px;
+    min-height: 45px;
+}
+
+.TodoLabel input[type="checkbox"] {
+    opacity: 1;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    z-index: 90;
+}
+
+.TodoLabel p {
+    text-align: left;
+    display: inline-block;
+    margin-left: 15px;
+    width: 80%;
+    word-break: break-all;
+    padding: 10px;
+}
+
+.TodoLabel input:checked::before {
+    height: 25px;
+    width: 25px;
+    content: '✔';
+    display: inline-block;
+    font-size: 26.66667px;
+    text-align: center;
+    line-height: 25px;
+  }

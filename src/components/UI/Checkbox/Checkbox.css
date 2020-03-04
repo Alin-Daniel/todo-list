@@ -1,32 +1,4 @@
-.Todo {
-    width: 80%;
-    border: 1px solid #eee; 
-    box-shadow: 0 2px 3px #ccc;
-    padding: 10px;
-    margin: 10px auto;
-    box-sizing: border-box;
-    position: relative;
-    background-color: #BFF4DD;
-}
-
-.TodoDetails {
-  transition: all 0.5s ease-in;
-  opacity: 1;
-  word-break: break-all;
-}
-
-.TodoCompleted {
-    text-decoration: line-through;
-    opacity: 0.6;
-}
-
-
-.TodoDescription {
-    width: 90%;
-    margin: 0;
-}
-
-.optionInput {
+.OptionInput {
     transition: all 0.5s ease-in;
     opacity: 0;
     -webkit-appearance: none;
@@ -38,25 +10,27 @@
     bottom: 0;
     height: 40px;
     width: 40px;
-    background: #cbd1d8;
-    border: none;
     color: #fff;
+    background: #BFF4DD;
+    border: 1px solid #00d478;
     cursor: pointer;
     display: inline-block;
     margin-right: 0.5rem;
     outline: none;
     z-index: 1000;
   }
+
+
   
-  .optionInput:checked {
+  .OptionInput:checked {
     background: #00d478;
   }
 
-  .optionInput.active, .optionInput:checked.active {
+  .OptionInput.active, .OptionInput:checked.active {
     opacity: 1;
   }
 
-  .optionInput:checked::before {
+  .OptionInput:checked::before {
     height: 40px;
     width: 40px;
     content: '✔';
@@ -65,7 +39,7 @@
     text-align: center;
     line-height: 40px;
   }
-  .optionInput:checked::after {
+  .OptionInput:checked::after {
     background: #00d478;
     content: '';
     display: block;

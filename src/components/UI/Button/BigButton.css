@@ -1,0 +1,25 @@
+.BigButton {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.4s;
+    font-weight: 400;
+    backface-visibility: hidden;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Success {
+    background-color: #00D478;
+    color: #fff;
+}
+
+.BigButton:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}

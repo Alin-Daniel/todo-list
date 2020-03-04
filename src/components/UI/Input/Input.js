@@ -79,16 +79,12 @@ const input = props => {
       );
   }
   return (
-    // <div className={!props.lists ? classes.Input : props.lists}>
-    // { <label className={classes.Label}>{props.label}</label> }
     <Aux>
       {validationError}
     <div className={classes.Input}>
       {inputElement}
-      <label className={props.completed ? classes.LabelLine : null}>{props.label}</label>
     </div>
     </Aux>
-    //  </div>
   );
 };
 

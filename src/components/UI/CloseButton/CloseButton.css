@@ -19,8 +19,6 @@
     height: 1px;
     width: inherit;
     background: #D4005C;
-    /* background: #FFC107; */
-    left: 0;
     transition: all .3s ease-in;
   }
   

@@ -8,7 +8,6 @@ import Lists from "../../components/Todo/Lists/Lists";
 import Modal from "../../components/UI/Modal/Modal";
 import TodoSummary from "../../components/TodoSummary/TodoSummary";
 import axios from "../../axios-todo";
-import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import * as actions from "../../store/actions/index";
 import { updateObject, checkValidity } from "../../shared/utility";
@@ -161,13 +160,6 @@ export class TodoList extends Component {
       />
     );
 
-    // if(this.props.error) {
-    //   lists = null;
-    // }
-
-    if (this.props.loading) {
-      lists = <Spinner />;
-    }
     return (
       <Aux>
         <Modal

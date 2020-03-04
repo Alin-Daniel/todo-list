@@ -1,3 +1,20 @@
+## Introduction
+
+Hi there!
+I created this simple ToDo app on my own with React, Redux, Axios and Firebase.
+It has signup/login/logout functionality. If you play with it without signing in, it won't save anything to a database. Once you login you can see your whole list of Todos and you can filter them by: active, completed or all of them and they can be saved to Firebase and fetched each time you login. I hope you enjoy it!
+
+## App link
+You can see a live demo on Github pages [here](https://alin-daniel.github.io/todo-list/) or on Codesandbox [here](https://codesandbox.io/s/todo-list-gcsov)
+
+## Technologies:
+
+- ReactJS
+- Redux
+- Firebase
+- Axios
+- CSS modules
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

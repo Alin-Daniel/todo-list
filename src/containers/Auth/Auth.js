@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import Input from "../../components/UI/Input/Input";
 import Button from "../../components/UI/Button/Button";
+import BigButton from '../../components/UI/Button/BigButton';
 import classes from "./Auth.css";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import * as actions from "../../store/actions/index";
@@ -125,9 +126,9 @@ class Auth extends Component {
         {errorMessage}
         <form onSubmit={this.submitHandler}>
           {form}
-          <Button btnType="Success">Submit</Button>
+          <BigButton style={{marginTop: '20px'}} btnType="Success">Submit</BigButton>
         </form>
-        <Button btnType="Danger" clicked={this.switchAuthModeHandler}>
+        <Button style={{marginRight:'0px', paddingRight:'0px'}} btnType="Danger" clicked={this.switchAuthModeHandler}>
           Switch to {this.state.isSignup ? "Sign In" : "Sign Up"}
         </Button>
       </div>

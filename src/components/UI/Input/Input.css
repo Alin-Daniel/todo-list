@@ -27,20 +27,22 @@ label {
 .InputElement {
     outline: none;
     border: 1px solid #9FEFCC;
-    /* border: 1px solid #ccc; */
     background-color: #DFFAEE;
-    /* background-color: white; */
     font: inherit;
-    padding: 6px 10px;   
+    padding: 10px 10px;   
     display: block;
     width: 100%;
+    border: none;
     box-sizing: border-box;
+    border-radius: 4px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
 }
 
 .InputElement:focus {
     outline: none;
-    background-color: #BFF4DD;
-    /* background-color: #ccc; */
+    /* background-color: #BFF4DD; */
+    border-bottom: 3px solid #ff7730;
 }
 
 .Invalid {

@@ -1,6 +1,7 @@
 import * as actionTypes from "./actionTypes";
 import axios from "axios";
-import config from "../../../config";
+
+const key = process.env.REACT_APP_API_KEY;
 
 export const authStart = () => {
   return {
@@ -50,10 +51,10 @@ export const auth = (email, password, isSignUp) => {
     };
 
     let url =
-      "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=" + config.key;
+      "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=" + key;
     if (!isSignUp) {
       url =
-        "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=" + config.key;
+        "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=" + key;
     }
 
     axios

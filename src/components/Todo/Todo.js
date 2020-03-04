@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../../components/UI/Button/Button";
+import Checkbox from '../UI/Checkbox/Checkbox';
 import classes from "./Todo.css";
 
 const todo = props => {
@@ -10,11 +11,9 @@ const todo = props => {
     .join("-");
 
   const todoClasses = [classes.TodoDetails];
-  const inputClasses = [classes.optionInput];
   if (props.completed) {
     todoClasses.push(classes.TodoCompleted);
-    inputClasses.push(classes.active);
-    // inputClasses.push(classes.optionInput);
+  
   }
   return (
     <div className={classes.Todo}>
@@ -29,14 +28,7 @@ const todo = props => {
       <Button btnType="Success" clicked={props.completeHandler}>
         Completed
       </Button>
-      {/* {props.completed ? ( */}
-        <input
-          type="checkbox"
-          className={inputClasses.join(" ")}
-          checked
-          readOnly
-        />
-         {/* ) : null}  */}
+      <Checkbox completed={props.completed} checked readOnly/>
     </div>
   );
 };
